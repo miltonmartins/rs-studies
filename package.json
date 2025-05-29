@@ -9,6 +9,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/prompt-cli": "^19.8.1",
+    "conventional-changelog-cli": "^5.0.0",
     "cz-git": "^1.11.1",
     "husky": "^9.1.7"
   },
@@ -19,6 +20,7 @@
   },
   "scripts": {
     "commit": "git-cz",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "prepare": "husky"
   }
 }
